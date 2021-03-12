@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  SimpleDI
 //
-//  Created by ITMI on 11/03/21.
+//  Created by Labib Muhajir on 11/03/21.
 //
 
 import UIKit
@@ -10,10 +10,18 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-
+    func application(_ application: UIApplication, willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
+        DIContainer.register(resolver:  JSONDecoder() )
+        DIContainer.register(resolver:  MovieRepository(decoder: DIContainer.resolve()) )
+        DIContainer.register(name: "app_name", resolver:  "Simple DI" )
+        DIContainer.register(name: "created", resolver:  "11 Maret 2021" )
+        
+        return true
+    }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
         return true
     }
 

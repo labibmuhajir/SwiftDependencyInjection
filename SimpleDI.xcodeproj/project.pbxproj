@@ -14,7 +14,10 @@
 		5E6220B425FA090A00948F23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E6220B325FA090A00948F23 /* Assets.xcassets */; };
 		5E6220B725FA090A00948F23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E6220B525FA090A00948F23 /* LaunchScreen.storyboard */; };
 		5E6220C225FA090A00948F23 /* SimpleDITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6220C125FA090A00948F23 /* SimpleDITests.swift */; };
-		5E6220CD25FA090A00948F23 /* SimpleDIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6220CC25FA090A00948F23 /* SimpleDIUITests.swift */; };
+		5E6220DF25FA092200948F23 /* SimpleInjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6220DE25FA092200948F23 /* SimpleInjection.swift */; };
+		5E6220E825FA09FE00948F23 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6220E725FA09FE00948F23 /* Movie.swift */; };
+		5E6220F225FA0C1D00948F23 /* MovieRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E6220F125FA0C1D00948F23 /* MovieRepository.swift */; };
+		5E62210B25FA309100948F23 /* popular_movies.json in Resources */ = {isa = PBXBuildFile; fileRef = 5E62210A25FA309100948F23 /* popular_movies.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,16 +28,10 @@
 			remoteGlobalIDString = 5E6220A625FA090700948F23;
 			remoteInfo = SimpleDI;
 		};
-		5E6220C925FA090A00948F23 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5E62209F25FA090700948F23 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5E6220A625FA090700948F23;
-			remoteInfo = SimpleDI;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5E58261325FB0800001E8D44 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5E6220A725FA090700948F23 /* SimpleDI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleDI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E6220AA25FA090700948F23 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E6220AC25FA090700948F23 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,9 +43,10 @@
 		5E6220BD25FA090A00948F23 /* SimpleDITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleDITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E6220C125FA090A00948F23 /* SimpleDITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDITests.swift; sourceTree = "<group>"; };
 		5E6220C325FA090A00948F23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5E6220C825FA090A00948F23 /* SimpleDIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleDIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E6220CC25FA090A00948F23 /* SimpleDIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleDIUITests.swift; sourceTree = "<group>"; };
-		5E6220CE25FA090A00948F23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E6220DE25FA092200948F23 /* SimpleInjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleInjection.swift; sourceTree = "<group>"; };
+		5E6220E725FA09FE00948F23 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		5E6220F125FA0C1D00948F23 /* MovieRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRepository.swift; sourceTree = "<group>"; };
+		5E62210A25FA309100948F23 /* popular_movies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = popular_movies.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,22 +64,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5E6220C525FA090A00948F23 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		5E62209E25FA090700948F23 = {
 			isa = PBXGroup;
 			children = (
+				5E58261325FB0800001E8D44 /* README.md */,
 				5E6220A925FA090700948F23 /* SimpleDI */,
 				5E6220C025FA090A00948F23 /* SimpleDITests */,
-				5E6220CB25FA090A00948F23 /* SimpleDIUITests */,
 				5E6220A825FA090700948F23 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +82,6 @@
 			children = (
 				5E6220A725FA090700948F23 /* SimpleDI.app */,
 				5E6220BD25FA090A00948F23 /* SimpleDITests.xctest */,
-				5E6220C825FA090A00948F23 /* SimpleDIUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,6 +89,8 @@
 		5E6220A925FA090700948F23 /* SimpleDI */ = {
 			isa = PBXGroup;
 			children = (
+				5E6220E325FA09D200948F23 /* Data */,
+				5E6220DD25FA091200948F23 /* Injection */,
 				5E6220AA25FA090700948F23 /* AppDelegate.swift */,
 				5E6220AC25FA090700948F23 /* SceneDelegate.swift */,
 				5E6220AE25FA090700948F23 /* ViewController.swift */,
@@ -106,6 +98,7 @@
 				5E6220B325FA090A00948F23 /* Assets.xcassets */,
 				5E6220B525FA090A00948F23 /* LaunchScreen.storyboard */,
 				5E6220B825FA090A00948F23 /* Info.plist */,
+				5E62210A25FA309100948F23 /* popular_movies.json */,
 			);
 			path = SimpleDI;
 			sourceTree = "<group>";
@@ -119,13 +112,37 @@
 			path = SimpleDITests;
 			sourceTree = "<group>";
 		};
-		5E6220CB25FA090A00948F23 /* SimpleDIUITests */ = {
+		5E6220DD25FA091200948F23 /* Injection */ = {
 			isa = PBXGroup;
 			children = (
-				5E6220CC25FA090A00948F23 /* SimpleDIUITests.swift */,
-				5E6220CE25FA090A00948F23 /* Info.plist */,
+				5E6220DE25FA092200948F23 /* SimpleInjection.swift */,
 			);
-			path = SimpleDIUITests;
+			path = Injection;
+			sourceTree = "<group>";
+		};
+		5E6220E325FA09D200948F23 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5E6220E625FA09EF00948F23 /* Model */,
+				5E6220E525FA09E600948F23 /* Repository */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5E6220E525FA09E600948F23 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				5E6220F125FA0C1D00948F23 /* MovieRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		5E6220E625FA09EF00948F23 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5E6220E725FA09FE00948F23 /* Movie.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,24 +183,6 @@
 			productReference = 5E6220BD25FA090A00948F23 /* SimpleDITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5E6220C725FA090A00948F23 /* SimpleDIUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5E6220D725FA090A00948F23 /* Build configuration list for PBXNativeTarget "SimpleDIUITests" */;
-			buildPhases = (
-				5E6220C425FA090A00948F23 /* Sources */,
-				5E6220C525FA090A00948F23 /* Frameworks */,
-				5E6220C625FA090A00948F23 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5E6220CA25FA090A00948F23 /* PBXTargetDependency */,
-			);
-			name = SimpleDIUITests;
-			productName = SimpleDIUITests;
-			productReference = 5E6220C825FA090A00948F23 /* SimpleDIUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +196,6 @@
 						CreatedOnToolsVersion = 12.4;
 					};
 					5E6220BC25FA090A00948F23 = {
-						CreatedOnToolsVersion = 12.4;
-						TestTargetID = 5E6220A625FA090700948F23;
-					};
-					5E6220C725FA090A00948F23 = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 5E6220A625FA090700948F23;
 					};
@@ -221,7 +216,6 @@
 			targets = (
 				5E6220A625FA090700948F23 /* SimpleDI */,
 				5E6220BC25FA090A00948F23 /* SimpleDITests */,
-				5E6220C725FA090A00948F23 /* SimpleDIUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -231,6 +225,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E62210B25FA309100948F23 /* popular_movies.json in Resources */,
 				5E6220B725FA090A00948F23 /* LaunchScreen.storyboard in Resources */,
 				5E6220B425FA090A00948F23 /* Assets.xcassets in Resources */,
 				5E6220B225FA090700948F23 /* Main.storyboard in Resources */,
@@ -238,13 +233,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5E6220BB25FA090A00948F23 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5E6220C625FA090A00948F23 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -259,8 +247,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E6220AF25FA090700948F23 /* ViewController.swift in Sources */,
+				5E6220DF25FA092200948F23 /* SimpleInjection.swift in Sources */,
 				5E6220AB25FA090700948F23 /* AppDelegate.swift in Sources */,
+				5E6220F225FA0C1D00948F23 /* MovieRepository.swift in Sources */,
 				5E6220AD25FA090700948F23 /* SceneDelegate.swift in Sources */,
+				5E6220E825FA09FE00948F23 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,14 +263,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5E6220C425FA090A00948F23 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5E6220CD25FA090A00948F23 /* SimpleDIUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -287,11 +270,6 @@
 			isa = PBXTargetDependency;
 			target = 5E6220A625FA090700948F23 /* SimpleDI */;
 			targetProxy = 5E6220BE25FA090A00948F23 /* PBXContainerItemProxy */;
-		};
-		5E6220CA25FA090A00948F23 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5E6220A625FA090700948F23 /* SimpleDI */;
-			targetProxy = 5E6220C925FA090A00948F23 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -509,44 +487,6 @@
 			};
 			name = Release;
 		};
-		5E6220D825FA090A00948F23 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SimpleDIUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.labibmuhajir.SimpleDIUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SimpleDI;
-			};
-			name = Debug;
-		};
-		5E6220D925FA090A00948F23 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = SimpleDIUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.github.labibmuhajir.SimpleDIUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = SimpleDI;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -573,15 +513,6 @@
 			buildConfigurations = (
 				5E6220D525FA090A00948F23 /* Debug */,
 				5E6220D625FA090A00948F23 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5E6220D725FA090A00948F23 /* Build configuration list for PBXNativeTarget "SimpleDIUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5E6220D825FA090A00948F23 /* Debug */,
-				5E6220D925FA090A00948F23 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

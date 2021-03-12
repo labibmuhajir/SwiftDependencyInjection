@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  SimpleDI
 //
-//  Created by ITMI on 11/03/21.
+//  Created by Labib Muhajir on 11/03/21.
 //
 
 import UIKit
